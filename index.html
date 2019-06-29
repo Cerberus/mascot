@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Wongnai</title>
+		<title>Mascot</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Model" />
-		<meta name="keywords" content="wongnai, bear, mascot" />
+		<meta name="keywords" content="bear, mascot" />
 		<meta name="author" content="Thanaphol Pomsuwan" />
 		<script
 			type="module"
@@ -15,9 +15,26 @@
 			nomodule
 			src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
 		></script>
+		<style>
+			body {
+				margin: 0;
+			}
+			h1 {
+				text-align: center;
+			}
+			model-viewer {
+				width: 100vw;
+				height: 40vw;
+			}
+			.box {
+				margin: 16px;
+			}
+		</style>
 	</head>
 	<body>
+		<h1>Mascot</h1>
 		<model-viewer
+			src="./assets/Astronaut.glb"
 			ar
 			camera-controls
 			alt="3D model"
@@ -26,5 +43,21 @@
 			magic-leap
 			unstable-webxr
 		></model-viewer>
+		<div class="box">
+			<h3>Supported devices for Augmented Reality:</h3>
+			<ul>
+				<li>Android: OS 7.0 or later</li>
+				<li>iOS: Since iPhone 6S or later</li>
+				<li>
+					More information:
+					<a
+						href="https://developers.google.com/ar/discover/supported-devices"
+						target="_blank"
+						rel="noopener noreferrer"
+						>link</a
+					>
+				</li>
+			</ul>
+		</div>
 	</body>
 </html>
